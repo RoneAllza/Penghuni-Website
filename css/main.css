@@ -1,0 +1,82 @@
+/* Custom Properties */
+:root {
+    --primary-color: #0a1118;
+    --primary-color-highlight: #233d54;
+    --bs-body-bg: #e7d1dda2;
+    --bs-body-font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding-top: 56px;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--primary-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 0; /* Remove the default margin that Bootstrap applies */
+}
+
+.navbar-nav .nav-item {
+    margin: 0;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.navbar-nav .nav-item:first-child {
+    margin-right: 0;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white; /* Default text color for navbar items */
+    text-align: center; /* Center the text */
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color-highlight); /* Text color on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: black; /* Text color for active (clicked) item */
+}
+
+/* Jumbotron Styles */
+.custom-jumbotron {
+    background-image: url('/img/bgpenghuni.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #fff; /* Set text color for better contrast with the background */
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+}
+
+.custom-jumbotron h1,
+.custom-jumbotron p {
+    color: #fff; /* Set text color for h1 and p elements */
+}
+
+.jumbotron-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (alpha) for transparency */
+    padding: 20px; /* Adjust padding as needed */
+    margin: 0px;
+    border-radius: 10px; /* Optional: Add border-radius for a rounded appearance */
+}
+
+.card:hover .img-title {
+    top: 0;
+    transition: all 0.5s ease-out;
+  }
+
+hr {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 25px;
+}
+
+#custom-hr {
+    border: 1px solid white;
+}
